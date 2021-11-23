@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-TakeEatEasy/Pods-TakeEatEasy-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
+${BUILT_PRODUCTS_DIR}/PUGradientSlider/PUGradientSlider.framework
+${BUILT_PRODUCTS_DIR}/TGPControls/TGPControls.framework
+${BUILT_PRODUCTS_DIR}/WSTagsField/WSTagsField.framework

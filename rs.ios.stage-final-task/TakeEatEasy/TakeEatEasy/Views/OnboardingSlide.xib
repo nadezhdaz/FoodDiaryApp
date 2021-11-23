@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-ExtraBold.ttf">
+            <string>Lato-ExtraBold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OnboardingSlide" customModule="TakeEatEasy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycF-YF-LKF">
+                    <rect key="frame" x="171.5" y="28" width="32" height="29"/>
+                    <fontDescription key="fontDescription" name="Lato-ExtraBold" family="Lato" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ds-Rd-OaX">
+                    <rect key="frame" x="32.5" y="67" width="310" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="310" id="rCl-CP-0zr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSB-5k-LhJ" customClass="RoundButton" customModule="TakeEatEasy" customModuleProvider="target">
+                    <rect key="frame" x="147" y="227" width="80" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Get Started"/>
+                    <connections>
+                        <action selector="startAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ftG-2c-SZc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9Ds-Rd-OaX" firstAttribute="top" secondItem="ycF-YF-LKF" secondAttribute="bottom" constant="10" id="GlZ-0t-M2r"/>
+                <constraint firstItem="9Ds-Rd-OaX" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Icm-tt-Dm7"/>
+                <constraint firstItem="ycF-YF-LKF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="28" id="leo-B8-PFm"/>
+                <constraint firstItem="ycF-YF-LKF" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="wgf-Og-Dfi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="9Ds-Rd-OaX" id="KjJ-J8-wCk"/>
+                <outlet property="hiLabel" destination="ycF-YF-LKF" id="KPo-Dd-kHi"/>
+                <outlet property="startButton" destination="tSB-5k-LhJ" id="fnp-6X-1xQ"/>
+            </connections>
+            <point key="canvasLocation" x="121.59999999999999" y="-105.69715142428787"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

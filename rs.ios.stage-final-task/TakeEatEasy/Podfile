@@ -1,0 +1,17 @@
+platform :ios, '13.0'
+
+target 'TakeEatEasy' do
+  # Comment the next line if you don't want to use dynamic frameworks
+ 
+
+   	pod 'PUGradientSlider'
+   	pod 'Charts'
+	pod 'TGPControls'
+        pod 'Sourcery'
+        pod 'WSTagsField'
+   
+  use_frameworks!
+
+
+
+end

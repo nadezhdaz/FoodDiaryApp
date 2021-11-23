@@ -1,0 +1,34 @@
+PODS:
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - PUGradientSlider (1.0.1)
+  - Sourcery (1.6.0)
+  - TGPControls (5.1.0)
+  - WSTagsField (5.4.0)
+
+DEPENDENCIES:
+  - Charts
+  - PUGradientSlider
+  - Sourcery
+  - TGPControls
+  - WSTagsField
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - PUGradientSlider
+    - Sourcery
+    - TGPControls
+    - WSTagsField
+
+SPEC CHECKSUMS:
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  PUGradientSlider: c009f644efd520c62cdee7151cf1c4f3a2305e71
+  Sourcery: 744f43178637c79bf23127dfe34e2103b3f28499
+  TGPControls: 52c0770bee9c9aee364f1559cc627fc01ea5e8b2
+  WSTagsField: a4e91b7d866e8c9755332ebcf8123f42f2abd4a0
+
+PODFILE CHECKSUM: 96e2d794554e8a38d25e9046e6e8000d825286cb
+
+COCOAPODS: 1.11.2
