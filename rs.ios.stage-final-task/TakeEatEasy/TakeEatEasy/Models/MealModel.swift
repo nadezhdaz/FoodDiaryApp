@@ -11,8 +11,8 @@ import CoreData
 struct MealModel {
     var id: NSManagedObjectID?
     var name: String?
-    var date: Date
-    var picture: UIImage
+    var date: Date?
+    var picture: UIImage?
     var tags: [TagModel]?
     var tagStrings: [String]?
     var mood: MoodModel?
@@ -20,7 +20,6 @@ struct MealModel {
     
     public func tagsList() -> String? {
         guard let tags = tagStrings else { return nil }
-        //return tags.map { $0.tag }.joined(separator:", ")
         return tags.joined(separator:", ")
     }
 }
@@ -28,8 +27,7 @@ struct MealModel {
 extension Meal {
     
     var mealModel: MealModel {
-        //MealModel(id: objectID, name: name, date: date!, picture: UIImage(data: picture!)!, mood: MoodModel(rawValue: mood)!, moodAfter: MoodModel(rawValue: moodAfter)!)
-        MealModel(id: objectID, name: name, date: date!, picture: UIImage(data: picture!)!, tagStrings: tagsStrings, mood: MoodModel(rawValue: mood) ?? MoodModel(rawValue: 3), moodAfter: MoodModel(rawValue: moodAfter) ?? MoodModel(rawValue: 3))
+        MealModel(id: objectID, name: name, date: date, picture: UIImage(data: picture ?? <#default value#>), tagStrings: tagsStrings, mood: MoodModel(rawValue: mood) ?? MoodModel(rawValue: 3), moodAfter: MoodModel(rawValue: moodAfter) ?? MoodModel(rawValue: 3))
     }
     
 }
